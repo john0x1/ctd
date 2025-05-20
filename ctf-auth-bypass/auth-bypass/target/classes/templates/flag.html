@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flag</title>
+</head>
+<body>
+    <h2>🎉 Flag</h2>
+    <p>Your flag is: <strong th:text="${flag}"></strong></p>
+    <a th:href="@{/}">Go Back to Home</a>
+
+    <section>
+        <h3>Spring Security RegexRequestMatcher Auth Bypass (CVE-2022-22978)</h3>
+        <h4>Objective</h4>
+        <p>Exploit a misconfigured <code>RegexRequestMatcher</code> in a Spring Security application to bypass authorization and retrieve the flag from a protected endpoint.</p>
+        <h4>Background</h4>
+        <p>Spring Security is a widely used framework for securing Java web applications. A misconfiguration in <code>RegexRequestMatcher</code> can allow attackers to bypass access controls using encoded characters or semicolons in URLs.</p>
+        <h4>Steps</h4>
+        <ol>
+            <li><strong>Scan for open ports:</strong> <code>nmap 127.0.0.1</code></li>
+            <li><strong>Identify the Java process:</strong> <code>ps aux | grep java</code></li>
+            <li><strong>Enumerate endpoints with curl:</strong> <code>curl http://127.0.0.1:8080</code></li>
+            <li><strong>Try to access <code>/admin/flag</code> directly:</strong> <code>curl http://127.0.0.1:8080/admin/flag</code> (Should be forbidden)</li>
+            <li><strong>Exploit the bypass:</strong> Try any of these:</li>
+        </ol>
+    </section>
+</body>
+</html>

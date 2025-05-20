@@ -1,0 +1,14 @@
+package com.ctf.bypass;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class AppTest {
+    @Test
+    void testApp() {
+        assertTrue(true);
+    }
+}/mnt/e/studing/ctf/ctf-auth-bypass/auth-bypass/src/main/java/com/ctf/bypass/AuthBypassApplication.java
+/mnt/e/studing/ctf/ctf-auth-bypass/auth-bypass/src/main/java/com/ctf/bypass/config/WebSecurityConfig.java
+/mnt/e/studing/ctf/ctf-auth-bypass/auth-bypass/src/main/java/com/ctf/bypass/controller/HomeController.java
+/mnt/e/studing/ctf/ctf-auth-bypass/auth-bypass/src/main/java/com/ctf/bypass/App.java
